@@ -1,3 +1,13 @@
+/*== Variables ==*/
+
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
 /*== Global Resets ==*/
 
 /* Universal box sizing > includes padding and border, but NOT margin, in total box size */
@@ -20,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
 }
 
 main {
