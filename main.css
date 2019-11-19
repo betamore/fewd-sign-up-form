@@ -26,6 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 /*== Global Styles ==*/
 
 body {
+  background: var(--primary-red);
+  background-image: url('images/bg-intro-desktop.png');
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,7 +39,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 30vh;
+  margin-top: 40vh;
 }
 
 section {
