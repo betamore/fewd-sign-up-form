@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Frontend Mentor | Intro component with sign up form</title>
-
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="/main.css">
 </head>
@@ -24,15 +24,17 @@
     <!-- Offer + Form -->
     <section id="form">
       <p id="special-offer">Try it free 7 days then $20/mo. thereafter</p>
-      <form class="" action="index.html" method="post">
-        <input type="text" name="first-name" placeholder="First Name">
-        <input type="text" name="last-name" placeholder="Last Name">
-        <input type="email" name="email" placeholder="Email Address">
-        <input type="password" name="password" placeholder="Password">
-        <input type="submit" name="" value="Claim your free trail">
-      </form>
-      <!-- TOS -->
-      <p id="tos">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      <div id="form-wrapper">
+        <form class="" action="index.html" method="POST">
+          <input type="text" name="first-name" placeholder="First Name">
+          <input type="text" name="last-name" placeholder="Last Name">
+          <input type="email" name="email" placeholder="Email Address">
+          <input type="password" name="password" placeholder="Password">
+          <input type="submit" name="" value="Claim your free trail">
+        </form>
+        <!-- TOS -->
+        <p id="tos">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </div>
     </section>
   </main>
 
