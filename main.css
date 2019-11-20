@@ -46,11 +46,11 @@ main {
 }
 
 section {
-  width: 30%;
+  width: 33%;
 }
 
 #intro > h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 /* Offer + Form */
@@ -59,7 +59,7 @@ section {
   background: var(--accent-blue);
   border-radius: 5px;
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   box-shadow: 0 8px rgba(0,0,0,17.5%);
 }
@@ -104,13 +104,28 @@ input[type="submit"] {
 
 #tos {
   color: var(--grayish-blue);
-  font-size: 0.75rem;
+  font-size: 0.65rem;
+  margin-top: 0;
 }
 
 #tos > a {
   color: var(--primary-red);
   font-weight: 600;
   text-decoration: none;
+}
+
+.input-error {
+  display: none;
+  color: var(--primary-red);
+  margin-top: -10px;
+  font-size: 11px;
+  font-style: italic;
+  text-align: right;
+}
+
+.show-warning {
+  border: 2px solid var(--primary-red);
+  background: url('/images/icon-error.svg') no-repeat 95%;
 }
 
 /* Footer Attribution */
@@ -125,3 +140,26 @@ input[type="submit"] {
 }
 
 /*== Media Queries ==*/
+
+@media (max-width: 900px) {
+
+  main {
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    margin: 4rem 0 2rem;
+  }
+
+  section {
+    width: 80%;
+  }
+
+  #intro {
+    text-align: center;
+  }
+
+  #intro > h1 {
+    font-size: 2rem;
+  }
+
+}
