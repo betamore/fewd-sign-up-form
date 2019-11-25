@@ -6,6 +6,8 @@ var form = document.querySelector('form');
 var inputs = document.querySelectorAll('input:not([type="submit"])');
 // Grab submit input button
 var submit = document.querySelector('input[type="submit"]');
+// Set initial check status
+var initialCheck = false;
 
 // Disable native HTML5 client-side form validation
 form.setAttribute('novalidate', '');
@@ -14,6 +16,10 @@ form.setAttribute('novalidate', '');
 
 // Form validation function
 function formValidation(event) {
+  // Update initial check status
+  if (event.type === 'click') {
+    initialCheck = true;
+  }
   // Loop through input fields -> apply validation warnings as necessary
   for (input of inputs) {
     // Reset input field warnings
@@ -42,7 +48,7 @@ function formValidation(event) {
 submit.addEventListener('click', formValidation, false);
 // Listen for blur events on input fields
 document.addEventListener('blur', function(event) {
-  if (event.target.matches('input:not([type="submit"])')) {
+  if (initialCheck && event.target.matches('input:not([type="submit"])')) {
     formValidation(event);
   }
 }, true);
