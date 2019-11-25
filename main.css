@@ -102,6 +102,10 @@ input[type="submit"] {
   box-shadow: inset 0px -3px mediumseagreen;
 }
 
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
 #tos {
   color: var(--grayish-blue);
   font-size: 0.65rem;
@@ -113,6 +117,8 @@ input[type="submit"] {
   font-weight: 600;
   text-decoration: none;
 }
+
+/* Active state warnings */
 
 .input-error {
   display: none;
