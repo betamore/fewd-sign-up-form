@@ -131,7 +131,7 @@ input[type="submit"]:hover {
 
 .show-warning {
   border: 2px solid var(--primary-red);
-  background: url('/images/icon-error.svg') no-repeat 95%;
+  background: url('./images/icon-error.svg') no-repeat 95%;
 }
 
 /* Footer Attribution */
